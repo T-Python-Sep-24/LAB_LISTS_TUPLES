@@ -7,12 +7,6 @@ def largest_number(lst):
 def odd_numbers_list():
     return [x for x in range(1200, 2000, 125) if x % 2 != 0]
 
-def analyze_movies(movies):
-    for title, year, ratings in movies:
-        avg_rating = sum(ratings) / len(ratings)
-        if avg_rating >= 6.0:
-            print(f"{title} ({year}) - Average rating: {avg_rating:.2f} ★")
-
 # Ex
 numbers = [2, 3, 4, 5, 15, 1, 43, 20]
 
