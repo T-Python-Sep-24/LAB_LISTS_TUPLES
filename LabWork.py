@@ -1,5 +1,6 @@
 #The list for our operations
 numberslist: list[int] = [2, 3, 4, 5, 15, 1, 43, 20]
+print(f"List of numbers: {numberslist}")
 
 #Q1 function:
 def sumOfNumbers (numbers: list[int]) -> int:
@@ -16,7 +17,7 @@ def sumOfNumbers (numbers: list[int]) -> int:
 
     return sum
 #Print results
-print(sumOfNumbers(numberslist))
+print(f"Sum of all numbers in the list is: {sumOfNumbers(numberslist)}")
 
 #Q2 function:
 def largestNumber(numbers: list[int]) -> int:
@@ -36,8 +37,9 @@ def largestNumber(numbers: list[int]) -> int:
 
     return largestN
 #Print results
-print(largestNumber(numberslist))
+print(f"Largest number in the list is: {largestNumber(numberslist)}")
 
+print("-" * 30)
 #Q3 answer:
 #Odd numbers list from the elements of a range from 1200 to 2000 with steps of 125
 oddNumbers: list[int] = [n for n in range(1200, 2001, 125) if n % 2 != 0]
