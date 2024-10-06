@@ -1,19 +1,12 @@
 list= [2, 3, 4, 5, 15, 1, 43, 20]
 #task1
 def sum_of_all(list):
-    sum= 0
-    for i in list:
-        sum += i
-    return sum
+    return sum(list)
 print(sum_of_all(list))
 
 #task2
 def largest_number(list):
-    largest = list[0]
-    for n in list:
-        if n > largest:
-            largest = n
-    return largest
+    return max(list)
 print(largest_number(list))
 
 #task3

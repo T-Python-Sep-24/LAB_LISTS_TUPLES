@@ -10,12 +10,13 @@ movies = [
 def filter_movies():
     filtered =[]
     for movies2 in movies:
-        year, title, ratings = movies2
+        title, year, ratings = movies2
         avg = sum(ratings)/ len(ratings)
         if avg >= 6.0:
             filtered.append((title,year, avg))
+            filtered.sort(key=lambda x:x[2], reverse=True)
     return filtered
 for movie in filter_movies():
-        year, title, avg = movie
+        title, year, avg = movie
         print(f"{title} ({year}) - Average Rating: {avg:.2f} ★")
 
