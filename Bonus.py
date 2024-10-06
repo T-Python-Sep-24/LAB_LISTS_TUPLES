@@ -49,8 +49,3 @@ formattedOutput: str = ""
 #Call the method with the created list of movies
 modMoviesList: list = movieFiltering(moviesList)
 print(formattedOutput)
-
-    
-
-
-
